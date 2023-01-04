@@ -1,0 +1,19 @@
+To complete this project, you will need to do the following:
+
+Set up a web application that will display the list of pilots who have violated the no-drone zone (NDZ). This list should persist the pilot information for 10 minutes since their drone was last seen by the monitoring equipment.
+
+Implement a way to retrieve and parse the snapshot of drone positions provided by the monitoring equipment endpoint. You will need to extract the position and serial number of each drone from the XML format.
+
+Using the positions of the drones, determine which drones are within the no-drone zone (NDZ), which is a circle with a 100 meter radius centered at position (250000, 250000).
+
+For each drone that is within the NDZ, use the serial number to query the national drone registry endpoint to get the pilot's name, email address, and phone number.
+
+Display the pilot information, along with the closest distance of their drone to the nest, on the web application.
+
+Make sure that the web application updates automatically to show the most recent information without requiring the user to manually refresh the view.
+
+Deploy the web application so that it is accessible to the authorities.
+
+It is not necessary to visualize the drone positions, but doing so may be helpful for debugging or understanding the data.
+
+To test your solution, you can use the provided endpoint for retrieving the snapshot of drone positions and the national drone registry endpoint to get the pilot information. Make sure that the web application correctly identifies which drones are within the NDZ and displays the pilot information for those drones.
